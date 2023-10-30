@@ -1,11 +1,13 @@
 def multiply(a, b):
-
-    if a == 0 or b == 0:
-        return 0
-
+    # Base case: if either a or b is 1, return the other number
+    if a == 1:
+        return b
+    if b == 1:
+        return a
+    # Recursive case: multiply a by (b - 1) and add a to the result
     return a + multiply(a, b - 1)
 
-num1 = int(input("Enter first positive integer: "))
-num2 = int(input("Enter second positive integer: "))
-result = multiply(num1, num2)
-print(f"The product of {num1} and {num2} is {result}")
+# Example usage
+result = multiply(7, 4)
+print("Result:", result)  # Output: 28
+
