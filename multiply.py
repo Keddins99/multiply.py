@@ -7,7 +7,5 @@ def multiply(a, b):
     # Recursive case: multiply a by (b - 1) and add a to the result
     return a + multiply(a, b - 1)
 
-# Example usage
-result = multiply(7, 4)
-print("Result:", result)  # Output: 28
+
 
